@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borderless Coding Salary Comparison</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="borderless_logo.png" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #18063a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, #28d3a0, #4f46e5);
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .salary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        .salary-table thead {
+            background-color: #190639;
+        }
+        .salary-table th, .salary-table td {
+            padding: 0.75rem;
+            text-align: center;
+            border-bottom: 1px solid #4f46e5;
+        }
+        .salary-table th {
+            color: #28d3a0;
+            font-weight: bold;
+        }
+        .salary-table tr:nth-child(even) {
+            background-color: #1e084b;
+        }
+        .salary-table tr:hover {
+            background-color: #2f0c6f;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #190639;
+            color: #995eff;
+        }
+        @media (max-width: 768px) {
+            .salary-table td, .salary-table th {
+                font-size: 0.75rem;
+                padding: 0.5rem;
+            }
+            header h1 {
+                font-size: 1.75rem;
+            }
+        }
+
+        /* Developed by section */
+        .developed-by {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .developed-by img {
+            width: 30px;
+            height: auto;
+            display: block;
+            margin: 0 auto 0.5rem auto;
+        }
+        .developed-by p {
+            margin: 0;
+            font-size: 0.7rem;
+            color: #28d3a0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Borderless Coding Salary Comparison</h1>
+        <p>An overview of annual salaries for senior tech roles across the world</p>
+    </header>
+    <div class="container">
+        <p>This table presents the estimated average annual salaries (in USD) for senior professionals in various technology roles across different global locations. The figures are approximations based on available market data and research as of 2025.</p>
+        <table class="dataframe salary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Role</th>
+      <th>Canada</th>
+      <th>Dubai</th>
+      <th>London</th>
+      <th>Germany</th>
+      <th>USA</th>
+      <th>Singapore</th>
+      <th>China</th>
+      <th>Australia</th>
+      <th>Sweden</th>
+      <th>Netherlands</th>
+      <th>Switzerland</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Machine Learning</td>
+      <td>$96,000</td>
+      <td>$88,200</td>
+      <td>$80,400</td>
+      <td>$88,800</td>
+      <td>$172,800</td>
+      <td>$66,000</td>
+      <td>$68,400</td>
+      <td>$94,800</td>
+      <td>$67,200</td>
+      <td>$92,400</td>
+      <td>$144,000</td>
+    </tr>
+    <tr>
+      <td>Data Engineer</td>
+      <td>$76,000</td>
+      <td>$69,825</td>
+      <td>$63,650</td>
+      <td>$70,300</td>
+      <td>$136,800</td>
+      <td>$52,250</td>
+      <td>$54,150</td>
+      <td>$75,050</td>
+      <td>$53,200</td>
+      <td>$73,150</td>
+      <td>$114,000</td>
+    </tr>
+    <tr>
+      <td>Data Analyst</td>
+      <td>$60,000</td>
+      <td>$55,125</td>
+      <td>$50,250</td>
+      <td>$55,500</td>
+      <td>$108,000</td>
+      <td>$41,250</td>
+      <td>$42,750</td>
+      <td>$59,250</td>
+      <td>$42,000</td>
+      <td>$57,750</td>
+      <td>$90,000</td>
+    </tr>
+    <tr>
+      <td>Data Scientist</td>
+      <td>$88,000</td>
+      <td>$80,850</td>
+      <td>$73,700</td>
+      <td>$81,400</td>
+      <td>$158,400</td>
+      <td>$60,500</td>
+      <td>$62,700</td>
+      <td>$86,900</td>
+      <td>$61,600</td>
+      <td>$84,700</td>
+      <td>$132,000</td>
+    </tr>
+    <tr>
+      <td>Full-stack Python</td>
+      <td>$80,000</td>
+      <td>$73,500</td>
+      <td>$67,000</td>
+      <td>$74,000</td>
+      <td>$144,000</td>
+      <td>$55,000</td>
+      <td>$57,000</td>
+      <td>$79,000</td>
+      <td>$56,000</td>
+      <td>$77,000</td>
+      <td>$120,000</td>
+    </tr>
+    <tr>
+      <td>Full-stack typescript</td>
+      <td>$76,000</td>
+      <td>$69,825</td>
+      <td>$63,650</td>
+      <td>$70,300</td>
+      <td>$136,800</td>
+      <td>$52,250</td>
+      <td>$54,150</td>
+      <td>$75,050</td>
+      <td>$53,200</td>
+      <td>$73,150</td>
+      <td>$114,000</td>
+    </tr>
+    <tr>
+      <td>Cloud Specialist</td>
+      <td>$88,000</td>
+      <td>$80,850</td>
+      <td>$73,700</td>
+      <td>$81,400</td>
+      <td>$158,400</td>
+      <td>$60,500</td>
+      <td>$62,700</td>
+      <td>$86,900</td>
+      <td>$61,600</td>
+      <td>$84,700</td>
+      <td>$132,000</td>
+    </tr>
+    <tr>
+      <td>Multi-cloud Specialist</td>
+      <td>$92,000</td>
+      <td>$84,525</td>
+      <td>$77,050</td>
+      <td>$85,100</td>
+      <td>$165,600</td>
+      <td>$63,250</td>
+      <td>$65,550</td>
+      <td>$90,850</td>
+      <td>$64,400</td>
+      <td>$88,550</td>
+      <td>$138,000</td>
+    </tr>
+    <tr>
+      <td>Rust Developer</td>
+      <td>$88,000</td>
+      <td>$80,850</td>
+      <td>$73,700</td>
+      <td>$81,400</td>
+      <td>$158,400</td>
+      <td>$60,500</td>
+      <td>$62,700</td>
+      <td>$86,900</td>
+      <td>$61,600</td>
+      <td>$84,700</td>
+      <td>$132,000</td>
+    </tr>
+    <tr>
+      <td>Golang Developer</td>
+      <td>$84,000</td>
+      <td>$77,175</td>
+      <td>$70,350</td>
+      <td>$77,700</td>
+      <td>$151,200</td>
+      <td>$57,750</td>
+      <td>$59,850</td>
+      <td>$82,950</td>
+      <td>$58,800</td>
+      <td>$80,850</td>
+      <td>$126,000</td>
+    </tr>
+    <tr>
+      <td>Java Developer</td>
+      <td>$76,000</td>
+      <td>$69,825</td>
+      <td>$63,650</td>
+      <td>$70,300</td>
+      <td>$136,800</td>
+      <td>$52,250</td>
+      <td>$54,150</td>
+      <td>$75,050</td>
+      <td>$53,200</td>
+      <td>$73,150</td>
+      <td>$114,000</td>
+    </tr>
+    <tr>
+      <td>ML Ops</td>
+      <td>$92,000</td>
+      <td>$84,525</td>
+      <td>$77,050</td>
+      <td>$85,100</td>
+      <td>$165,600</td>
+      <td>$63,250</td>
+      <td>$65,550</td>
+      <td>$90,850</td>
+      <td>$64,400</td>
+      <td>$88,550</td>
+      <td>$138,000</td>
+    </tr>
+    <tr>
+      <td>Cloud Security</td>
+      <td>$100,000</td>
+      <td>$91,875</td>
+      <td>$83,750</td>
+      <td>$92,500</td>
+      <td>$180,000</td>
+      <td>$68,750</td>
+      <td>$71,250</td>
+      <td>$98,750</td>
+      <td>$70,000</td>
+      <td>$96,250</td>
+      <td>$150,000</td>
+    </tr>
+    <tr>
+      <td>SRE</td>
+      <td>$88,000</td>
+      <td>$80,850</td>
+      <td>$73,700</td>
+      <td>$81,400</td>
+      <td>$158,400</td>
+      <td>$60,500</td>
+      <td>$62,700</td>
+      <td>$86,900</td>
+      <td>$61,600</td>
+      <td>$84,700</td>
+      <td>$132,000</td>
+    </tr>
+    <tr>
+      <td>Infrastructure as a code</td>
+      <td>$84,000</td>
+      <td>$77,175</td>
+      <td>$70,350</td>
+      <td>$77,700</td>
+      <td>$151,200</td>
+      <td>$57,750</td>
+      <td>$59,850</td>
+      <td>$82,950</td>
+      <td>$58,800</td>
+      <td>$80,850</td>
+      <td>$126,000</td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+    <footer>
+        <div class="developed-by">
+            <img src="borderless_logo.png" alt="Borderless Coding logo">
+            <p>Developed by <strong>Borderless Coding</strong></p>
+        </div>
+    </footer>
+</body>
+</html>
